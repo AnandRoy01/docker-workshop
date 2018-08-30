@@ -29,10 +29,17 @@
 #         For Node:
 
 # 7) Expose the server port (this is for dev reference, EXPOSE cmd will not
-#      open up any ports )  
+#      open up any ports)  
 #    Hint : use EXPOSE keyword
 
 # 8) Start the server with Entrypoint
-#    Hint : Use ENTRYPOINT keyword
+#    Hint : use ENTRYPOINT keyword
 #
+
+# 9) Create the image  
+#   Hint : use docker build
+
+# 10) Run the container and expose the port
+#   Hint : use docker run 
+
 
