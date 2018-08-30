@@ -9,11 +9,12 @@
 # 3) Change workdir to /home/
 # Hint : use WORKDIR
 
+
 # 4) set entrypoint for running the process
 # Hint : use ENTTRYPOINT
 
 # 5) Build the image with the name "dwp02"
-# Hint : "docker build ...." 
+# Hint : "docker build ...."
 
 # 6) Create a container using  dwp02 image
 # Hint : "docker run ..."
