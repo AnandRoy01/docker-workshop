@@ -23,18 +23,23 @@
 	#  curl -sL https://deb.nodesource.com/setup_8.x | bash -
         # apt-get install -y nodejs
         # apt-get install -y npm
-                 
-# 3) Build an image named "edwp03" 
+
+# 3) copy hello_world to /home
+#    Hint : use copy command
+
+# 4) Create entrypoint to run hello_world
+#    Hint : use ENTRYPOINT
+            
+# 5) Build an image named "edwp03" 
 #    Hint : use "docker <build> .. command
 #
 
-
-# 4) Create the container and run in daemon mode
+# 6) Create the container and run in daemon mode
 #    Hint : use "docker run -d <image name> "
 #
 
 
-# 5) Inspect the container check the versions for one of 
+# 7) Inspect the container check the versions for one of 
 #	the java , python, node
 #    Hint : use "docker exec -it <cnt> /bin/bash"
 #

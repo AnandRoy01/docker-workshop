@@ -7,6 +7,9 @@
 #       For Java : java:8 
 #       For Python : python:3.6 
 #       For Node : node:8.11.4 
+FROM python:3.6
+
+RUN pip --version
 
 # 2) Create a folder called app under /home
 #     Hint : user mkdir keyword
