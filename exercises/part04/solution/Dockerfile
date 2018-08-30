@@ -5,21 +5,27 @@
 
 # 1) Create a base ubuntu 16.04 layer
 #    Hint : use FROM
+FROM ubuntu:16.04
 
 # 2) Create a directory called app at home
 #    Hint : mkdir -p  /home/app
+RUN mkdir -p /home/app
 
 # 3) Copy hello_server to /home/app         
 #    Hint : use COPY command
+COPY ./hello_server /home/app/
 
 # 4) Change working dir to /home/app/
 #   Hint use WORKDIR command
+WORKDIR /home/app/
 
 # 4) Expose the port 9000 (this will not acutally open/unblock the port)
 #    Hint : use EXPOSE command
+EXPOSE 9000
 
 # 5) Specify the entry point to start the server
 #    Hint : use ENTRYPOINT
+ENTRYPOINT ["./hello_server"]
 
 # 6) Build the image dwp-04
 #    Hint : docker build -t <name> .
@@ -39,6 +45,7 @@
 # 9) Create a directory called "cm" at /home/app
 #   Inside the container
 # Hint : use  RUN with mkdir 
+RUN mkdir /home/cm
 
 # 9) Create a volume called "Mordor"
 # Hint : Use docker volume create <name>
