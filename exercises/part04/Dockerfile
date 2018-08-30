@@ -1,6 +1,8 @@
 # Edwp-04
 #
 
+#Part - A
+
 # 1) Create a base ubuntu 18.04 layer
 #    Hint : use FROM
 
@@ -20,33 +22,36 @@
 #    Hint : docker build -t <name> .
 
 # 7) Run two containers
+#    Hint : docker run -d <image> 
 
-# 3) Create inermediate layer by installing one  
+# 8) Inspect the network, make sure both the container
+#    are in the same bridge
+#    Hint : use docker network ls
 
-#      a) java 1.8
-        # apt-get update
-        # apt install openjdk-8-jdk
+#-------------------------------------------------------
 
-#      b) python 3.6
-        # apt-get update 
-        # apt-get install -y python3.6  
-#
-#      c) node 8.11.4 (Fix this)
-	# curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-        # apt-get install -y nodejs
-                 
-# 3) Build an image named "dwp01" 
-#    Hint : use "docker <build> .. command
-#
+# Part - B (Stop both the containers)
+# Hint : use docker stop
 
+# 9) Create a directory called "cm" at /home/app
+#   Inside the container
+# Hint : use  RUN with mkdir 
 
-# 4) Create the container and run in daemon mode
-#    Hint : use "docker run -d <image name> "
-#
+# 9) Create a volume called "Mordor"
+# Hint : Use docker volume create <name>
 
+# 10) Inspect the volume Mordor
+# Hint : docker volume inspect
 
-# 5) Inspect the container check the versions for one of 
-#	the java , python, node
-#    Hint : use "docker exec -it <cnt> /bin/bash"
-#
+# 11) Run the container and mount the volume mordor 
+#  under /home/app/cm
+# Hint :  docker run with --mount source=mordor, /home/app/cm
+
+# 12) Inspect the container and create a dummy file under /home/app/cm
+# Hint : use docker exec -it <image> /bin/bash
+
+# 13) Check if the newly created file is persisted after stopping the container
+# Hint : docker inspect
+ 
+
 
