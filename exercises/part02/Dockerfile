@@ -1,6 +1,6 @@
 #Edwp-02
 
-# 1) set base image layer from ubuntu 18.04
+# 1) set base image layer from ubuntu 16.04
 #  Hint : use FROM keyword
 
 # 2) COPY "hello_world" binary to /home/ directory
