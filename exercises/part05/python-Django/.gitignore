@@ -1,0 +1,3 @@
+config/__pycache__/*
+App/__pycache__/*
+App/migrations/__pycache__/*

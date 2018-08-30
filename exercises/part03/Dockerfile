@@ -1,5 +1,5 @@
 # edwp-03
-#
+#------------------------------------
 
 # 1) Create a base ubuntu 16.04 layer
 #    Hint : use FROM
@@ -9,7 +9,8 @@
 #          apt-get install -y git
 # 
 
-# 3) Create inermediate layer by installing one  
+# 3) Create intermediate layer by installing one of 
+# the following 
 
 #      a) java 1.8
         # apt-get update
@@ -36,7 +37,6 @@
 
 # 6) Create the container and run in daemon mode
 #    Hint : use "docker run -d <image name> "
-#
 
 
 # 7) Inspect the container check the versions for one of 
