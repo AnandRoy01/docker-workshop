@@ -4,7 +4,7 @@ This repository consists for 5 part excercies for undersanding docker basics
  * Part 2 - Running your first container
  * Part 3 - Inspecting the Container
  * Part 4 - Network and Volumes
- * Part 5 - Containerize a RESTfull api (written in Sprinboot, Django, Express)
+ * Part 5 - Containerize a simpe RESTfull api (written in Sprinboot, Django, Express)
 
 Each part Contains a Dockerfile and a solution folder, the docker file contains a series of Problems(steps) with hints.Solutions are provided in the solution folder. 
 ## Requirements
