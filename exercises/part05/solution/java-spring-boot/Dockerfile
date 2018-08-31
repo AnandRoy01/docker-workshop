@@ -7,16 +7,7 @@
 #       For Java : 1.8 
 #       For Python : 
 #       For Node : node:8.11.4 
-
 FROM java:8
-
-# 2) Install the external dependencies (build tool, etc)
-#    Hint : use RUN keyword
-#      For Java :
-#      For Python :
-#      For Node : NA 
-
-
 
 # 3) Create a folder called app under /home
 #     Hint : user mkdir keyword

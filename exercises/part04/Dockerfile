@@ -29,13 +29,14 @@
 # 7) Run two containers
 #    Hint : docker run -d <image>
 
-# 8) Inspect the network, make sure both the container
+# 8) Inspect the network, make sure both the containers
 #    are in the same bridge
 #    Hint : use docker network ls
 
 #-------------------------------------------------------
 
-# Part - B (Stop both the containers)
+# Part - B : Creating a volume and mounting
+# (Stop both the containers)
 # Hint : use docker stop
 
 # 9) Create a directory called "cm" at /home/app
